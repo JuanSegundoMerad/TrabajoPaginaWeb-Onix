@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webEstilo.css">    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="web.html"><h1 class="logo-text">onix shopping</h1></a>
+            <a href="web.html">    
+                <img src="logo onix 1.png" alt="Logo Onix" class="logo-img">
+            </a>
+        </div>
+        <img src="image.png" alt="iconoUsuario" class="logo-img" id="iconoUsuario"> 
+    </header>
+
+    <div id="formularioUsuario" class="formulario-usuario">
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <script>
+        const iconoUsuario = document.getElementById('iconoUsuario');
+        const formulario = document.getElementById('formularioUsuario');
+
+        iconoUsuario.addEventListener('click', () => {
+            formulario.style.display = formulario.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+<footer>
+</footer>
+</html>
